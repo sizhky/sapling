@@ -45,11 +45,8 @@ package-dir = {"" = "src"}
 
 {% if cookiecutter.command_line_interface == 'Yes' %}
 [project.scripts]
-{{cookiecutter.slug}} = "{{cookiecutter.slug}}.cli:app"
-{% endif %}
-
-[project.scripts]
 {{cookiecutter.slug}} = "{{cookiecutter.slug}}:cli"
+{% endif %}
 
 # Mypy
 # ----
