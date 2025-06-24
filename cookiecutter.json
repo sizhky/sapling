@@ -4,7 +4,7 @@
   "full_name": "Yeshwanth Reddy",
   "email": "1992chinna@gmail.com",
   "github_username": "sizhky",
-  "project_short_description": "Yolo is a Python Boilerplate that contains all the boilerplate you need to create a Python package.",
+  "project_short_description": "{{ cookiecutter.project_name }} is a ... ",
   "pypi_username": "{{ cookiecutter.github_username }}",
   "version": "0.1.0",
   "use_pytest": "y",
