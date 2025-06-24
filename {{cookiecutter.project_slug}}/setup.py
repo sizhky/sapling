@@ -62,7 +62,7 @@ setup(
     {%- if cookiecutter.command_line_interface|lower == 'typer' %}
     entry_points={
         'console_scripts': [
-            '{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}.cli:app',
+            '{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}:cli',
         ],
     },
     {%- endif %}
