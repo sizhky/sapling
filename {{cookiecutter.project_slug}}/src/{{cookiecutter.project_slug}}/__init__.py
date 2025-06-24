@@ -5,4 +5,4 @@ __email__ = '{{ cookiecutter.email }}'
 __version__ = '{{ cookiecutter.version }}'
 
 from .__pre_init__ import cli
-from .health import greet, health_check
+from .health import health_check

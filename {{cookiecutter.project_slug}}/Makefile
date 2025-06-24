@@ -82,3 +82,6 @@ docs:
 
 serve-docs: docs ## serve the documentation with mkdocs
 	mkdocs serve
+
+export:
+	nbdev_export

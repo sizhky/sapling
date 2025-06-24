@@ -4,12 +4,11 @@
 
 import pytest
 
-from {{ cookiecutter.project_slug }} import health_check, greet
+from {{ cookiecutter.project_slug }} import health_check
 
 @pytest.fixture
 def response():
     health_check()
-    greet()
     """Sample pytest fixture.
 
     See more at: http://doc.pytest.org/en/latest/fixture.html

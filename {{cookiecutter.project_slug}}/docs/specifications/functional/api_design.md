@@ -43,3 +43,23 @@ The API will use standard HTTP status codes to indicate the success or failure o
   }
 }
 ```
+
+## 6. Happy Flow
+```mermaid
+graph  TD
+    A[Client Request] --> B[API Endpoint]
+    B --> C[Authentication]
+    C --> D[Process Request]
+    D --> E[Return Response]
+    E --> F[Client Receives Response]
+
+    %% Styles
+    classDef artifact fill:#fef3c7,stroke:#f59e0b,stroke-width:1px;
+    class B,C,D artifact;
+
+    classDef optional fill:#e0f2fe,stroke:#0284c7,stroke-width:1px;
+    class A optional;
+
+    classDef critical-artifact fill:#fee2e2,stroke:#dc2626,stroke-width:1.5px;
+    class E critical-artifact;
+```

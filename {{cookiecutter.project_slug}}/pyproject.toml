@@ -18,7 +18,8 @@ classifiers = [
 ]
 license = {text = "{{cookiecutter.open_source_license}}"}
 dependencies = [
-  "typer"
+  "typer",
+  "nbdev"
 ]
 
 [project.optional-dependencies]
