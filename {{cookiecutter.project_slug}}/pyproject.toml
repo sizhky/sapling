@@ -42,7 +42,7 @@ package-dir = {"" = "src"}
 "*" = ["*.*"]
 
 [project.scripts]
-{{cookiecutter.slug}} = "{{cookiecutter.slug}}:cli"
+{{cookiecutter.project_slug}} = "{{cookiecutter.project_slug}}:cli"
 
 # Mypy
 # ----
