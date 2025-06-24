@@ -1,13 +1,13 @@
 {% if cookiecutter.create_author_file == 'y' -%}
-include AUTHORS.rst
+include AUTHORS.md
 {% endif -%}
-include CONTRIBUTING.rst
-include HISTORY.rst
+include CONTRIBUTING.md
 include LICENSE
-include README.rst
+include README.md
 
 recursive-include tests *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
 
-recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
+recursive-exclude docs
+recursive-include Makefile make.bat *.jpg *.png *.gif
