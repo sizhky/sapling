@@ -4,11 +4,10 @@
 
 import pytest
 
-from {{ cookiecutter.project_slug }} import health_check
+from {{ cookiecutter.project_slug }}.health import health_check
 
 @pytest.fixture
 def response():
-    health_check()
     """Sample pytest fixture.
 
     See more at: http://doc.pytest.org/en/latest/fixture.html
@@ -17,7 +16,8 @@ def response():
     # return requests.get('https://github.com/audreyr/cookiecutter-pypackage')
 
 
-def test_content(response):
+def test_health_check(response):
     """Sample pytest test function with the pytest fixture as an argument."""
     # from bs4 import BeautifulSoup
     # assert 'GitHub' in BeautifulSoup(response.content).title.string
+    health_check()

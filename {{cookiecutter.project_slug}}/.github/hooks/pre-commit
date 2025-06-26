@@ -14,7 +14,7 @@ if [ "$branch" = "main" ] && [ -n "$staged_py_files" ]; then
     echo "ruff format \\"
     echo "$staged_py_files" | sed 's/ /\n\t/g' | sed 's/^/\t/'
     echo " ----✂︎----------------------------------------------------------"
-    echo "to fix those files, or just run 'ruff format' to fix the whole repo."
+    echo "to fix those files, or just run 'ruff format' to fix the whole repo. If you don't have ruff, run `uv tool install ruff` to install it."
     exit 1
   fi
 fi
@@ -22,7 +22,7 @@ fi
 if git diff --cached --name-only | grep -q "version"; then
   echo "✅ version updated."
 else
-  echo "❌ version must be updated on every commit."
+  echo "❌ the version number in the file in \"src/<project>/version\" must be updated on every commit."
   exit 1
 fi
 
@@ -33,3 +33,9 @@ if ! /Users/yeshwanth/Code/Personal/todo-tracker/.venv/bin/pytest --maxfail=1 --
 fi
 
 exit 0
+
+# Usage
+# 1. Save this script as `.github/hooks/pre-commit` in your repository.
+# 2. Make it executable: `chmod +x .github/hooks/precommit`.
+# 3. Ensure your Git configuration allows hooks: `git config core.hooksPath .github/hooks`.
+# 4. Commit your changes, and the hook will run automatically.
