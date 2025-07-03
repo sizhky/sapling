@@ -4,47 +4,49 @@
 
 ---
 
-## Core Specifications
+## 🚀 Getting Started
 
-- [ ] [Vision](specifications/strategy/vision.md)
-- [ ] [Business Overview](specifications/business/overview.md)
-- [ ] [Functional Requirements](specifications/functional/requirements.md)
-- [ ] [Technical Specs](specifications/technical/specs.md)
+- [ ] [Onboarding Guide](non-technical/onboarding/guide.md) - **Start here!**
+- [ ] [Glossary of Terms](non-technical/glossary/terms.md) - Key concepts and terminology
 
 ---
 
-## Executive Clarity
+## 📋 Project Overview
 
-- [ ] [Executive Summary](executive/briefs/summary.md)
-- [ ] [Project Roadmap](executive/roadmaps/timeline.md)
-
----
-
-## System Architecture
-
-- [ ] [High-Level Diagram](architecture/high-level/diagram.md)
-- [ ] [Low-Level Module Map](architecture/low-level/modules.md)
+- [ ] [Executive Summary](executive/briefs/summary.md) - High-level project overview
+- [ ] [Business Overview](specifications/business/overview.md) - What problem we're solving
+- [ ] [Strategy Vision](specifications/strategy/vision.md) - Long-term goals and direction
+- [ ] [Project Roadmap](executive/roadmaps/timeline.md) - Development timeline and milestones
 
 ---
 
-## Implementation Aids
+## 📐 Requirements & Specifications
 
-- [ ] [API Reference](implementation/api-reference/README.md)
-- [ ] [Code Walkthroughs](implementation/code-walkthroughs/README.md)
-
----
-
-## Non-technical Documentation
-
-- [ ] [Onboarding Guide](non-technical/onboarding/guide.md)
-- [ ] [Glossary of Terms](non-technical/glossary/terms.md)
+- [ ] [Specifications Overview](specifications/index.md) - All specifications at a glance
+- [ ] [Business Strategy Vision](specifications/business/strategy/vision.md) - Business goals and strategy
+- [ ] [Functional Requirements](specifications/functional/requirements.md) - What the system should do
+- [ ] [Technical Specs](specifications/technical/specs.md) - How the system should work
 
 ---
 
-## Meta
+## 🏗️ System Architecture
 
-- [ ] [Changelog](meta/changelog.md)
-- [ ] [Contribution Guidelines](meta/contributing.md)
+- [ ] [High-Level Diagram](architecture/high-level/diagram.md) - System overview and components
+- [ ] [Low-Level Module Map](architecture/low-level/modules.md) - Detailed module interactions
+
+---
+
+## 🛠️ Implementation & Development
+
+- [ ] [API Reference](implementation/api-reference/README.md) - Technical API documentation
+- [ ] [Code Walkthroughs](implementation/code-walkthroughs/README.md) - Guided code explanations
+
+---
+
+## 📚 Project Meta
+
+- [ ] [Contribution Guidelines](meta/contributing.md) - How to contribute to the project
+- [ ] [Changelog](meta/changelog.md) - Version history and updates
 
 ---
 
