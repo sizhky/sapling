@@ -48,4 +48,5 @@
 
 ---
 
-> ✅ Tip: Use `[x]` to mark done in rendered Markdown.
+
+<!-- > ✅ Tip: Use `[x]` to mark done in rendered Markdown. -->
