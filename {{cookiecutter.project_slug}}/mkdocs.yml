@@ -4,6 +4,7 @@ docs_dir: docs
 plugins:
     - search
     - mermaid2
+    - awesome-pages
     - minify:
         minify_html: true
     - git-revision-date-localized:
