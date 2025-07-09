@@ -13,4 +13,4 @@ __email__ = '{{ cookiecutter.email }}'
 __version__ = '{{ cookiecutter.version }}'
 
 from .__pre_init__ import cli
-from . import health
+from health import *
