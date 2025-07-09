@@ -20,3 +20,6 @@ replay: watch
 
 test:
 	pytest
+
+update-requirements:
+	pigar generate -f requirements/core.txt

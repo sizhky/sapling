@@ -9,3 +9,4 @@ twine
 ruff
 typer
 pytest
+pigar
