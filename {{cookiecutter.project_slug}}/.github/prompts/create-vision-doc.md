@@ -68,8 +68,8 @@ _Focus on outcomes, not implementation details._
 - Item B  
 
 ## 📅 7. Timeline / Milestones
-- **Q1 [Year]:** Milestone description.  
-- **Q2 [Year]:** Milestone description.  
+- **Milestone 1** - Milestone description.  
+- **Milestone 2** - Milestone description.  
 
 ## 📌 8. Strategic Differentiators
 - **Differentiator A:** What makes it unique?  
