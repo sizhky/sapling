@@ -1,7 +1,7 @@
 ---
 description: "Instruction template for generating a ‘happy_flow.md’ document with clear prose and diagrams from project-level Markdown inputs."
 globs:
-  - "create-happyflow.md"
+  - "create-happy-flow.md"
 alwaysApply: false
 ---
 
@@ -17,34 +17,61 @@ You use both **prose and diagrams** to produce clarity. Diagrams are **mandatory
 
 ---
 
-## Goal
+## Interrogation Protocol Before Happy Flow Generation
 
-Guide an AI assistant to produce a `docs/happy-flow.md` file that captures the ideal, error-free end-to-end scenario (“happy path”) for any project, using the provided vision and supporting `.md` files and following this instruction template.
+The assistant must **not proceed** without resolving the following **six domains of clarity**. Infer missing data from supporting docs where possible. If inference fails, **halt and escalate**.
+
+---
+### 0. Supporting Docs
+- Read the `vision.md` and all supporting `.md` files to understand the project domain, actors, data, and behavior contracts.
+- If any supporting documentation is missing or incomplete, **halt** and request the specific missing files
+
+### 1. Actor Roles and System Boundaries
+
+- Identify the **Primary Actor** driving the flow (e.g., End User, Admin).
+- List all **Supporting Actors** (internal modules, external APIs, DBs).
+- Define **System Boundary**: What lies *inside* vs *outside* the system's control?
+
+> If actor boundaries are unclear, flow steps will be invalid. Refuse to proceed.
 
 ---
 
-## Inputs
+### 2. Scenario Initiation
 
-1. **vision.md** — high-level project vision and objectives  
-2. **Supporting docs** — additional `.md` files (requirements, data models, UI mockups, workflows, etc)  
-3. **Instruction template** — this file (`create-happyflow.md`)
+- What exact **Trigger Event** initiates the happy flow?
+- What **Preconditions** must hold? (e.g., auth state, prior data)
+- What context or data does the actor already possess at start?
+
+> If trigger/preconditions are missing, delay is better than fabrication.
 
 ---
 
-## Clarifying Questions
+### 3. Canonical Flow Shape
 
-Before generating the happy flow, the assistant **must** ask:
+- Enumerate the **ideal sequence of actions and system responses**.
+- Should the flow be **linear**, **branched**, or **contains feedback loops**?
+- Identify any **state transitions** not visible in user-facing steps.
 
-- **Primary Actor(s):** Who initiates and drives the main scenario?  
-- **Supporting Actor(s):** What systems or roles assist (e.g., database, external APIs)?  
-- **Trigger Event:** What exact event or action starts the flow?  
-- **Preconditions:** What must be true or in place before the flow begins?  
-- **Main Steps:** What are the sequential actions and system responses in the ideal case?  
-- **Postconditions:** What final state or outputs indicate success?  
-- **Business Rules (Optional):** Any domain rules or constraints to enforce?  
-- **Success Criteria (Optional):** How will you measure that the flow worked (e.g., performance metrics, completion rates)?  
-- **Flow Visualization Required:** Are there specific flows or states that need a diagrammatic representation?  
-- **Expected Timing/Latency:** Should transitions include timing constraints or expected durations?
+> If steps lack system response mapping, escalate. Diagrams will fail without this.
+
+---
+
+### 4. Outcomes, Constraints, and Timing
+
+- What defines **success**? (postconditions, outputs, final state)
+- Any **Business Rules** governing data, transitions, or actors?
+- Are there **Timing Constraints** (e.g., latency, sequence, deadlines)?
+- Must diagrams include **parallelism**, **delays**, or **timeouts**?
+
+> Omit this only if explicitly irrelevant. Timing and constraints shape diagram type.
+
+### 5. Library Research
+- What key libraries are involved in the happy flow?
+- Use the context7 mcp server to fetch the latest docs of libraries to understand how to use them in the happy flow.
+- Halt if context7 mcp server is not available or if library documentation is missing.
+---
+
+Final Rule: *If any block is underspecified, assistant must halt and request only the missing subset, not regenerate from scratch.*
 
 ---
 
@@ -87,7 +114,7 @@ Before generating the happy flow, the assistant **must** ask:
 
 ## Happy Flow Document Structure
 
-# 🌈 Happy Flow: <Project Name>
+# Happy Flow
 
 ## 1. Purpose
 One- or two-sentence statement of the ideal outcome.

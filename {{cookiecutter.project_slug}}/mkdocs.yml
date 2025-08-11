@@ -31,6 +31,7 @@ theme:
     - navigation.tabs
     - navigation.indexes
     - navigation.instant
+    - content.code.copy
 
   icon:
     # logo: material/book
