@@ -4,6 +4,6 @@
     "*": true,
   },
   "chat.modeFilesLocations": {
-    ".github/prompts": true,
+    ".github/daksh/prompts": true,
   }
 }
