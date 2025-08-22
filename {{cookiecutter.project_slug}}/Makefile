@@ -81,7 +81,7 @@ docs:
 	mkdocs build
 
 serve-docs: docs ## serve the documentation with mkdocs
-	mkdocs serve
+	uv run mkdocs serve
 
 export:
 	nbdev_export
