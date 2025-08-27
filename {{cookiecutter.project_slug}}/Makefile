@@ -83,7 +83,7 @@ docs:
 serve-docs: docs ## serve the documentation with mkdocs
 	uv run mkdocs serve
 
-export:
+e:
 	nbdev_export
 
 setup:
