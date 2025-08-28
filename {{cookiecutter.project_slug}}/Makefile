@@ -83,10 +83,5 @@ docs:
 serve-docs: docs ## serve the documentation with mkdocs
 	uv run mkdocs serve
 
-e:
+export:
 	nbdev_export
-
-setup:
-	git init
-	git add .
-	git commit -m "Initial commit"
