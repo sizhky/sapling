@@ -1,5 +1,5 @@
 Project Running on:
-https://project.divami.com/{{ cookiecutter.project_slug }}
+https://projects.divami.com/{{ cookiecutter.project_slug }}
 
 {% set is_open_source = cookiecutter.open_source_license != 'Not open source' -%}
 # {{ cookiecutter.project_name }}
